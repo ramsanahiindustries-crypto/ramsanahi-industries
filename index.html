@@ -8,12 +8,10 @@
     <title>Ramsanahi Industries | Toka Machine Manufacturer in Punjab</title>
 
     <meta name="description"
-        content="Ramsanahi Industries is a trusted toka machine manufacturer in Punjab providing heavy duty and high performance agricultural toka machines across India.">
+        content="Ramsanahi Industries manufactures premium toka machines in Punjab for farmers across India. Heavy duty and high performance chaff cutter machines.">
 
     <meta name="keywords"
-        content="toka machine, toka machine manufacturer Punjab, chaff cutter machine, agricultural machines India, farming equipment supplier">
-
-    <meta name="author" content="Ramsanahi Industries">
+        content="toka machine, chaff cutter machine Punjab, farming equipment India, toka manufacturer">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -26,16 +24,13 @@
         body {
             margin: 0;
             background: #f2f6f9;
-            color: #1e293b;
-            overflow-x: hidden;
+            color: #1e293b
         }
-
-        /* HEADER */
 
         header {
             background: linear-gradient(135deg, #0f172a, #0ea5a4);
             color: #fff;
-            padding: 70px 15px;
+            padding: 60px 15px;
             text-align: center
         }
 
@@ -45,15 +40,13 @@
         }
 
         header h1 {
-            font-size: 48px;
+            font-size: 42px;
             margin: 0
         }
 
         header p {
             font-size: 18px
         }
-
-        /* NAV */
 
         nav {
             background: #020617;
@@ -63,18 +56,14 @@
             gap: 20px;
             padding: 12px;
             position: sticky;
-            top: 0;
-            z-index: 1000
+            top: 0
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 15px
+            font-weight: 600
         }
-
-        /* SECTIONS */
 
         section {
             padding: 60px 15px;
@@ -89,8 +78,6 @@
             box-shadow: 0 12px 25px rgba(0, 0, 0, .08)
         }
 
-        /* PRODUCTS */
-
         .product-modern {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -98,39 +85,20 @@
         }
 
         .product-item {
-            background: linear-gradient(135deg, #fff, #f1f5f9);
-            padding: 30px;
-            border-radius: 22px;
-            box-shadow: 0 12px 25px rgba(0, 0, 0, .08);
-            transition: .3s;
-            position: relative
-        }
-
-        .product-item:hover {
-            transform: translateY(-6px)
+            background: #f9fafb;
+            padding: 28px;
+            border-radius: 20px;
+            box-shadow: 0 10px 22px rgba(0, 0, 0, .08)
         }
 
         .product-title {
             font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 8px
+            font-weight: 700
         }
 
         .product-desc {
             color: #475569
         }
-
-        .product-item:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 6px;
-            background: linear-gradient(90deg, #0ea5a4, #38bdf8)
-        }
-
-        /* GALLERY */
 
         .slider {
             position: relative;
@@ -141,11 +109,10 @@
         .slide {
             display: none;
             width: 100%;
-            height: 380px;
+            height: 360px;
             object-fit: contain;
             background: #fff;
-            border-radius: 18px;
-            cursor: pointer
+            border-radius: 18px
         }
 
         .slide.active {
@@ -156,12 +123,12 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(0, 0, 0, .6);
+            background: #0008;
             color: #fff;
             border: none;
-            padding: 10px 15px;
-            font-size: 20px;
+            padding: 10px 14px;
             border-radius: 50%;
+            font-size: 20px;
             cursor: pointer
         }
 
@@ -172,8 +139,6 @@
         .slide-btn.right {
             right: 10px
         }
-
-        /* FORM */
 
         form {
             display: grid;
@@ -204,11 +169,8 @@
             padding: 14px;
             border: none;
             border-radius: 14px;
-            cursor: pointer;
-            font-size: 15px
+            cursor: pointer
         }
-
-        /* FOOTER */
 
         footer {
             background: #020617;
@@ -216,8 +178,6 @@
             text-align: center;
             padding: 25px
         }
-
-        /* WHATSAPP */
 
         .whatsapp {
             position: fixed;
@@ -229,8 +189,7 @@
             border-radius: 50%;
             font-size: 24px;
             text-decoration: none;
-            animation: pulse 1.8s infinite;
-            z-index: 999
+            animation: pulse 1.8s infinite
         }
 
         @keyframes pulse {
@@ -247,15 +206,13 @@
             }
         }
 
-        /* POPUP */
-
         .modal {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, .5);
+            background: #0006;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -275,7 +232,7 @@
             border-radius: 22px;
             text-align: center;
             animation: pop .4s;
-            max-width: 90%;
+            max-width: 90%
         }
 
         @keyframes pop {
@@ -299,38 +256,14 @@
             font-weight: 600
         }
 
-        /* RESPONSIVE FIXES */
-
-        @media(max-width:768px) {
-
+        @media(max-width:600px) {
             header h1 {
-                font-size: 36px
+                font-size: 32px
             }
 
             .slide {
-                height: 260px
+                height: 240px
             }
-
-            .box {
-                padding: 25px
-            }
-
-        }
-
-        @media(max-width:480px) {
-
-            header h1 {
-                font-size: 30px
-            }
-
-            nav a {
-                font-size: 14px
-            }
-
-            .slide {
-                height: 220px
-            }
-
         }
     </style>
 </head>
@@ -353,45 +286,51 @@
     <section id="about">
         <div class="box">
             <h2>About Us</h2>
-            <p>Ramsanahi Industries is a trusted manufacturer of premium toka machines built for durability, efficiency
-                and long lasting performance.</p>
-            <p>Our machines are tested for heavy working conditions to ensure reliability year after year.</p>
+            <p>Ramsanahi Industries is a trusted toka machine manufacturer delivering durable and efficient farming
+                equipment across India.</p>
+            <p>Our machines are engineered for heavy workloads and long lasting performance.</p>
         </div>
     </section>
 
     <section id="products">
         <h2>Products</h2>
         <div class="product-modern">
+
             <div class="product-item">
                 <div class="product-title">Heavy Duty Toka</div>
-                <div class="product-desc">Built for heavy operations.</div>
+                <div class="product-desc">Designed for continuous heavy operations.</div>
             </div>
 
             <div class="product-item">
                 <div class="product-title">Standard Toka</div>
-                <div class="product-desc">Perfect for daily farming.</div>
+                <div class="product-desc">Perfect for daily farming usage.</div>
             </div>
 
             <div class="product-item">
                 <div class="product-title">High Performance Toka</div>
-                <div class="product-desc">Fast & efficient output.</div>
+                <div class="product-desc">High speed and premium build quality.</div>
             </div>
+
         </div>
     </section>
 
     <section id="gallery">
         <h2>Gallery</h2>
+
         <div class="slider">
             <button class="slide-btn left" onclick="prevSlide()">❮</button>
+
             <img src="images/product1.jpeg" class="slide active" onclick="zoomImage(this)">
             <img src="images/product2.jpeg" class="slide" onclick="zoomImage(this)">
             <img src="images/product3.jpeg" class="slide" onclick="zoomImage(this)">
+
             <button class="slide-btn right" onclick="nextSlide()">❯</button>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact Us</h2>
+
         <div class="box">
 
             <form id="contactForm">
@@ -431,14 +370,14 @@
     <section>
         <div class="box" style="text-align:center">
             <h2>Enquiries Served</h2>
-            <h1 id="liveCounter" style="color:#0ea5a4">0</h1>
+            <h1 id="liveCounter" style="color:#0ea5a4">150</h1>
         </div>
     </section>
 
     <footer>© 2026 Ramsanahi Industries</footer>
 
     <a class="whatsapp"
-        href="https://wa.me/917615080001?text=Hello%20Ramsanahi%20Industries,%20I%20am%20interested%20in%20your%20toka%20machines"
+        href="https://wa.me/917615080001?text=Hi%20Ramsanahi%20Industries,%20I%20want%20to%20know%20about%20machines"
         target="_blank">💬</a>
 
     <div class="modal" id="popupModal">
@@ -485,7 +424,6 @@
         function closeZoom() { imageZoom.classList.remove('show') }
         function closeModal() { popupModal.classList.remove('show') }
 
-        const form = document.getElementById('contactForm');
         const pincode = document.getElementById('pincode');
         const city = document.getElementById('city');
         const state = document.getElementById('state');
@@ -495,7 +433,7 @@
                 try {
                     const res = await fetch(`https://api.postalpincode.in/pincode/${pincode.value}`);
                     const data = await res.json();
-                    if (data[0].Status === 'Success') {
+                    if (data[0].Status === "Success") {
                         city.value = data[0].PostOffice[0].District;
                         state.value = data[0].PostOffice[0].State;
                     }
@@ -503,23 +441,14 @@
             }
         });
 
-        const scriptURL = "YOUR_GOOGLE_SCRIPT_URL";
+        const form = document.getElementById('contactForm');
+
+        const scriptURL = "https://script.google.com/macros/s/AKfycbyYigfAVjRWQyZXoGOUCCMnlGFNFCeIGw9zqytpyfKrx30Ixwn9C7QMfB_bkJXNpNW0/exec";
 
         form.addEventListener('submit', async e => {
             e.preventDefault();
 
-            let lastQueue = localStorage.getItem('lastQueue') ? parseInt(localStorage.getItem('lastQueue')) : 150;
-            const queue = lastQueue + 1;
-            localStorage.setItem('lastQueue', queue);
-
-            queueNumber.innerText = queue;
-            popupModal.classList.add('show');
-
-            const total = JSON.parse(localStorage.getItem('totalEnquiries')) || 0;
-            localStorage.setItem('totalEnquiries', total + 1);
-            animateCounter();
-
-            await fetch(scriptURL, {
+            const response = await fetch(scriptURL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -527,37 +456,36 @@
                     phone: form.phone.value,
                     city: city.value,
                     state: state.value,
-                    message: form.message.value,
-                    queue: queue
+                    country: "India",
+                    message: form.message.value
                 })
             });
+
+            const result = await response.json();
+
+            queueNumber.innerText = result.queue;
+            popupModal.classList.add('show');
+
+            animateCounter(result.queue);
 
             form.reset();
         });
 
-        function animateCounter() {
+        function animateCounter(latestQueue) {
 
             const el = document.getElementById('liveCounter');
-
-            // Start from 150 base
-            const total = JSON.parse(localStorage.getItem('totalEnquiries')) || 0;
-            const target = 150 + total;
-
-            let current = 150;
+            let current = parseInt(el.innerText);
 
             const timer = setInterval(() => {
                 current++;
-                if (current >= target) {
-                    current = target;
+                if (current >= latestQueue) {
+                    current = latestQueue;
                     clearInterval(timer);
                 }
                 el.innerText = current;
             }, 15);
 
         }
-
-
-        animateCounter();
 
     </script>
 
