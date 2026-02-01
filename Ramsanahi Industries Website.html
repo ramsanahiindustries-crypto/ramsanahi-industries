@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- SEO META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="title" content="Ramsanahi Industries | Toka Machine Manufacturer in Punjab">
+    <meta name="description"
+        content="Ramsanahi Industries manufactures high quality toka machines for farmers. Durable, high performance agricultural machines in Punjab India.">
+    <meta name="keywords"
+        content="Toka Machine, Ramsanahi Industries, Agricultural Machines, Farming Equipment Punjab, Toka Manufacturer">
+    <meta name="author" content="Ramsanahi Industries">
+
+    <meta property="og:title" content="Ramsanahi Industries - Toka Machines">
+    <meta property="og:description" content="Premium toka machine manufacturer for agriculture needs">
+    <meta property="og:type" content="website">
+
+    <title>Ramsanahi Industries | Toka Machines</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS (REPLACE ID LATER) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXX');
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif
+        }
+
+        body {
+            margin: 0;
+            background: #f2f6f9;
+            color: #1e293b
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f172a, #0ea5a4);
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center
+        }
+
+        header img {
+            width: 120px;
+            margin-bottom: 15px
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0
+        }
+
+        nav {
+            background: #020617;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 14px;
+            position: sticky;
+            top: 0
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600
+        }
+
+        section {
+            padding: 70px 20px;
+            max-width: 1200px;
+            margin: auto
+        }
+
+        .box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, .08)
+        }
+
+        .product-modern {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px
+        }
+
+        .product-item {
+            background: linear-gradient(135deg, #fff, #f1f5f9);
+            padding: 35px;
+            border-radius: 22px;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, .08);
+            transition: .3s;
+            position: relative
+        }
+
+        .product-item:hover {
+            transform: translateY(-6px)
+        }
+
+        .product-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 12px
+        }
+
+        .product-desc {
+            color: #475569
+        }
+
+        .product-item:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, #0ea5a4, #38bdf8)
+        }
+
+        .slider {
+            position: relative;
+            max-width: 1000px;
+            margin: auto
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 420px;
+            object-fit: contain;
+            background: #fff;
+            border-radius: 18px;
+            cursor: pointer
+        }
+
+        .slide.active {
+            display: block
+        }
+
+        .slide-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #0008;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 22px;
+            cursor: pointer
+        }
+
+        .slide-btn.left {
+            left: 10px
+        }
+
+        .slide-btn.right {
+            right: 10px
+        }
+
+        form {
+            display: grid;
+            gap: 15px
+        }
+
+        input,
+        textarea {
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid #cbd5e1
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap
+        }
+
+        .row input {
+            flex: 1
+        }
+
+        button {
+            background: #0ea5a4;
+            color: #fff;
+            padding: 14px;
+            border: none;
+            border-radius: 14px;
+            cursor: pointer
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #25d366;
+            color: #fff;
+            padding: 16px 18px;
+            border-radius: 50%;
+            font-size: 24px;
+            text-decoration: none;
+            animation: pulse 1.8s infinite;
+            z-index: 999
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, .7)
+            }
+
+            70% {
+                box-shadow: 0 0 0 18px rgba(37, 211, 102, 0)
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0)
+            }
+        }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0006;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: .3s
+        }
+
+        .modal.show {
+            opacity: 1;
+            pointer-events: auto
+        }
+
+        .modal-card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 22px;
+            text-align: center;
+            animation: pop .4s
+        }
+
+        @keyframes pop {
+            from {
+                transform: scale(.7);
+                opacity: 0
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1
+            }
+        }
+
+        footer {
+            background: #020617;
+            color: #fff;
+            text-align: center;
+            padding: 30px
+        }
+
+        @media(max-width:600px) {
+            header h1 {
+                font-size: 36px
+            }
+
+            .slide {
+                height: 260px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png">
+        <h1>Ramsanahi Industries</h1>
+        <p>Premium Toka Machine Manufacturers</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <div class="box">
+            <h2>About Us</h2>
+            <p>Ramsanahi Industries is a trusted manufacturer of premium toka machines built for durability and
+                performance.</p>
+            <p>Helping farmers increase productivity with reliable agricultural equipment.</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Products</h2>
+        <div class="product-modern">
+
+            <div class="product-item">
+                <div class="product-title">Heavy Duty Toka</div>
+                <div class="product-desc">Designed for continuous heavy farm operations.</div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-title">Standard Toka</div>
+                <div class="product-desc">Perfect for everyday agricultural use.</div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-title">High Performance Toka</div>
+                <div class="product-desc">High output with premium durability.</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+
+        <div class="slider">
+            <button class="slide-btn left" onclick="prevSlide()">❮</button>
+
+            <img src="images/product1.Jpeg" class="slide active" onclick="zoomImage(this)">
+            <img src="images/product2.Jpeg" class="slide" onclick="zoomImage(this)">
+            <img src="images/product3.Jpeg" class="slide" onclick="zoomImage(this)">
+
+            <button class="slide-btn right" onclick="nextSlide()">❯</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="box">
+
+            <form id="contactForm">
+
+                <input id="name" placeholder="Name" required>
+                <input id="phone" placeholder="+91 Phone Number" value="+91 " required>
+
+                <div class="row">
+                    <input id="pincode" placeholder="Pincode / ZIP" required>
+                    <input id="state" placeholder="State" readonly>
+                </div>
+
+                <div class="row">
+                    <input id="city" placeholder="City" readonly>
+                    <input id="country" value="India" readonly>
+                </div>
+
+                <textarea id="message" placeholder="Message"></textarea>
+
+                <button>Send Enquiry</button>
+
+            </form>
+
+            <div style="margin-top:40px">
+                <p><b>Address:</b> Jaitu - Bathinda Rd, Goniana, Punjab 151201</p>
+                <p><b>Phone:</b> +91 76150 80001</p>
+                <p><b>Email:</b> sagargoyal78@gmail.com</p>
+
+                <iframe
+                    src="https://www.google.com/maps?q=Jaitu%20Bathinda%20Rd%20Goniana%20Punjab%20151201&output=embed"
+                    width="100%" height="300" style="border:0;border-radius:18px"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>© 2026 Ramsanahi Industries</footer>
+
+    <a class="whatsapp" href="https://wa.me/917615080001" target="_blank">💬</a>
+
+    <div class="modal" id="popupModal">
+        <div class="modal-card">
+            <h3>Thank you!</h3>
+            <p>Your Queue Number</p>
+            <h1 id="queueNumber"></h1>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <div class="modal" id="imageZoom">
+        <div class="modal-card">
+            <img id="zoomImg" style="max-width:90vw;max-height:80vh">
+            <br><button onclick="closeZoom()">Close</button>
+        </div>
+    </div>
+
+    <script>
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(i) {
+            slides.forEach(s => s.classList.remove('active'));
+            slides[i].classList.add('active');
+        }
+        function nextSlide() { currentSlide = (currentSlide + 1) % slides.length; showSlide(currentSlide) }
+        function prevSlide() { currentSlide = (currentSlide - 1 + slides.length) % slides.length; showSlide(currentSlide) }
+
+        function zoomImage(img) { zoomImg.src = img.src; imageZoom.classList.add('show') }
+        function closeZoom() { imageZoom.classList.remove('show') }
+        function closeModal() { popupModal.classList.remove('show') }
+
+        /* PINCODE AUTO */
+        pincode.addEventListener('blur', async () => {
+            if (pincode.value.length >= 5) {
+                const res = await fetch(`https://api.postalpincode.in/pincode/${pincode.value}`);
+                const data = await res.json();
+                if (data[0].Status === "Success") {
+                    city.value = data[0].PostOffice[0].District;
+                    state.value = data[0].PostOffice[0].State;
+                }
+            }
+        });
+
+        /* SERIAL QUEUE */
+        function getNextQueue() {
+            let last = localStorage.getItem("lastQueue");
+            if (!last) { last = 150 }
+            let next = parseInt(last) + 1;
+            localStorage.setItem("lastQueue", next);
+            return next;
+        }
+
+        /* GOOGLE SHEET */
+        const scriptURL = "PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE";
+
+        contactForm.addEventListener('submit', async e => {
+            e.preventDefault();
+
+            const queue = getNextQueue();
+            queueNumber.innerText = queue;
+            popupModal.classList.add('show');
+
+            const data = {
+                name: name.value,
+                phone: phone.value,
+                city: city.value,
+                state: state.value,
+                country: country.value,
+                message: message.value,
+                queue: queue
+            };
+
+            await fetch(scriptURL, {
+                method: "POST",
+                body: JSON.stringify(data)
+            });
+
+            contactForm.reset();
+        });
+    </script>
+
+</body>
+
+</html>
