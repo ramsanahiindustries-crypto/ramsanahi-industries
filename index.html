@@ -489,7 +489,14 @@
 
         animateCounter();
 
-        function openChatbotWhatsApp() { window.open(`https://wa.me/917615080001?text=${encodeURIComponent(chatbotMsg)}`, '_blank') }
+        function openChatbot() {
+            const msg = "Hi Ramsanahi Industries, I want to know about machines.";
+            window.open(
+                `https://wa.me/917615080001?text=${encodeURIComponent(msg)}`,
+                "_blank"
+            );
+        }
+
         function closeModal() { popupModal.classList.remove('show') }
     </script>
 </body>
