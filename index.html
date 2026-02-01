@@ -2,35 +2,15 @@
 <html lang="en">
 
 <head>
-<meta name="google-site-verification" content="II9j2uohNEwHn4xAmm8si2F1C_Hy3k3fSauPB1v0F-8" />
-    <!-- SEO META TAGS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="title" content="Ramsanahi Industries | Toka Machine Manufacturer in Punjab">
+    <title>Ramsanahi Industries | Toka Machine Manufacturer in Punjab</title>
     <meta name="description"
-        content="Ramsanahi Industries manufactures high quality toka machines for farmers. Durable, high performance agricultural machines in Punjab India.">
+        content="Ramsanahi Industries is a trusted toka machine manufacturer in Punjab providing heavy duty and high performance agricultural toka machines across India.">
     <meta name="keywords"
-        content="Toka Machine, Ramsanahi Industries, Agricultural Machines, Farming Equipment Punjab, Toka Manufacturer">
+        content="toka machine, toka machine manufacturer Punjab, chaff cutter machine, agricultural machines India, farming equipment supplier">
     <meta name="author" content="Ramsanahi Industries">
-
-    <meta property="og:title" content="Ramsanahi Industries - Toka Machines">
-    <meta property="og:description" content="Premium toka machine manufacturer for agriculture needs">
-    <meta property="og:type" content="website">
-
-    <title>Ramsanahi Industries | Toka Machines</title>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- GOOGLE ANALYTICS (REPLACE ID LATER) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXX');
-    </script>
-
     <style>
         * {
             box-sizing: border-box;
@@ -89,6 +69,7 @@
             box-shadow: 0 12px 25px rgba(0, 0, 0, .08)
         }
 
+        /* Products */
         .product-modern {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -111,7 +92,7 @@
         .product-title {
             font-size: 22px;
             font-weight: 700;
-            margin-bottom: 12px
+            margin-bottom: 10px
         }
 
         .product-desc {
@@ -128,18 +109,18 @@
             background: linear-gradient(90deg, #0ea5a4, #38bdf8)
         }
 
+        /* Gallery */
         .slider {
             position: relative;
-            max-width: 1000px;
+            max-width: 900px;
             margin: auto
         }
 
         .slide {
             display: none;
             width: 100%;
-            height: 420px;
-            object-fit: contain;
-            background: #fff;
+            height: 260px;
+            object-fit: cover;
             border-radius: 18px;
             cursor: pointer
         }
@@ -152,12 +133,12 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: #0008;
+            background: rgba(0, 0, 0, .6);
             color: #fff;
             border: none;
             padding: 10px 15px;
+            font-size: 20px;
             border-radius: 50%;
-            font-size: 22px;
             cursor: pointer
         }
 
@@ -169,6 +150,7 @@
             right: 10px
         }
 
+        /* Forms */
         form {
             display: grid;
             gap: 15px
@@ -181,16 +163,6 @@
             border: 1px solid #cbd5e1
         }
 
-        .row {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap
-        }
-
-        .row input {
-            flex: 1
-        }
-
         button {
             background: #0ea5a4;
             color: #fff;
@@ -200,6 +172,14 @@
             cursor: pointer
         }
 
+        footer {
+            background: #020617;
+            color: #fff;
+            text-align: center;
+            padding: 30px
+        }
+
+        /* WhatsApp */
         .whatsapp {
             position: fixed;
             bottom: 25px;
@@ -210,8 +190,13 @@
             border-radius: 50%;
             font-size: 24px;
             text-decoration: none;
+            box-shadow: 0 0 0 rgba(37, 211, 102, .7);
             animation: pulse 1.8s infinite;
             z-index: 999
+        }
+
+        .whatsapp:hover {
+            animation: bounce .6s
         }
 
         @keyframes pulse {
@@ -228,13 +213,32 @@
             }
         }
 
+        @keyframes bounce {
+            0% {
+                transform: translateY(0)
+            }
+
+            30% {
+                transform: translateY(-8px)
+            }
+
+            60% {
+                transform: translateY(4px)
+            }
+
+            100% {
+                transform: translateY(0)
+            }
+        }
+
+        /* Popup */
         .modal {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: #0006;
+            background: rgba(0, 0, 0, .5);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -253,35 +257,39 @@
             padding: 40px;
             border-radius: 22px;
             text-align: center;
-            animation: pop .4s
+            animation: pop .4s;
+            max-width: 650px
         }
 
         @keyframes pop {
-            from {
+            0% {
                 transform: scale(.7);
                 opacity: 0
             }
 
-            to {
+            100% {
                 transform: scale(1);
                 opacity: 1
             }
         }
 
-        footer {
-            background: #020617;
+        .bot-header {
+            background: #0ea5a4;
             color: #fff;
-            text-align: center;
-            padding: 30px
+            padding: 12px;
+            border-radius: 14px 14px 0 0;
+            margin: -40px -40px 20px;
+            font-weight: 600
+        }
+
+        .bot-msg {
+            color: #334155;
+            line-height: 1.6
         }
 
         @media(max-width:600px) {
             header h1 {
                 font-size: 36px
-            }
-
-            .slide {
-                height: 260px
             }
         }
     </style>
@@ -290,7 +298,7 @@
 <body>
 
     <header>
-        <img src="images/logo.png">
+        <img src="images/logo.png" alt="Logo">
         <h1>Ramsanahi Industries</h1>
         <p>Premium Toka Machine Manufacturers</p>
     </header>
@@ -305,176 +313,185 @@
     <section id="about">
         <div class="box">
             <h2>About Us</h2>
-            <p>Ramsanahi Industries is a trusted manufacturer of premium toka machines built for durability and
-                performance.</p>
-            <p>Helping farmers increase productivity with reliable agricultural equipment.</p>
+            <p>Ramsanahi Industries is a trusted manufacturer of premium toka machines built for durability, efficiency
+                and long lasting performance.</p>
+            <p>Our machines are tested for heavy working conditions to ensure reliability year after year.</p>
         </div>
     </section>
 
     <section id="products">
         <h2>Products</h2>
         <div class="product-modern">
-
             <div class="product-item">
                 <div class="product-title">Heavy Duty Toka</div>
-                <div class="product-desc">Designed for continuous heavy farm operations.</div>
+                <div class="product-desc">Built for heavy operations.</div>
             </div>
-
             <div class="product-item">
                 <div class="product-title">Standard Toka</div>
-                <div class="product-desc">Perfect for everyday agricultural use.</div>
+                <div class="product-desc">Perfect for daily farming.</div>
             </div>
-
             <div class="product-item">
                 <div class="product-title">High Performance Toka</div>
-                <div class="product-desc">High output with premium durability.</div>
+                <div class="product-desc">Fast & efficient output.</div>
             </div>
-
         </div>
     </section>
 
     <section id="gallery">
         <h2>Gallery</h2>
-
         <div class="slider">
             <button class="slide-btn left" onclick="prevSlide()">❮</button>
-
-            <img src="images/product1.Jpeg" class="slide active" onclick="zoomImage(this)">
-            <img src="images/product2.Jpeg" class="slide" onclick="zoomImage(this)">
-            <img src="images/product3.Jpeg" class="slide" onclick="zoomImage(this)">
-
+            <img src="images/product1.jpg" class="slide active" onclick="zoomImage(this)">
+            <img src="images/product2.jpg" class="slide" onclick="zoomImage(this)">
+            <img src="images/product3.jpg" class="slide" onclick="zoomImage(this)">
             <button class="slide-btn right" onclick="nextSlide()">❯</button>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact Us</h2>
-
         <div class="box">
-
             <form id="contactForm">
-
-                <input id="name" placeholder="Name" required>
-                <input id="phone" placeholder="+91 Phone Number" value="+91 " required>
-
-                <div class="row">
-                    <input id="pincode" placeholder="Pincode / ZIP" required>
-                    <input id="state" placeholder="State" readonly>
+                <input name="name" placeholder="Name" required>
+                <input name="phone" placeholder="Phone" required>
+                <div style="display:flex;gap:15px">
+                    <input id="pincode" placeholder="Pincode" required style="flex:1">
+                    <input id="state" placeholder="State" readonly style="flex:1">
                 </div>
-
-                <div class="row">
-                    <input id="city" placeholder="City" readonly>
-                    <input id="country" value="India" readonly>
+                <div style="display:flex;gap:15px">
+                    <input id="city" placeholder="City" readonly style="flex:1">
+                    <input id="country" value="India" readonly style="flex:1">
                 </div>
-
-                <textarea id="message" placeholder="Message"></textarea>
-
+                <textarea name="message" placeholder="Message"></textarea>
                 <button>Send Enquiry</button>
-
             </form>
 
             <div style="margin-top:40px">
                 <p><b>Address:</b> Jaitu - Bathinda Rd, Goniana, Punjab 151201</p>
                 <p><b>Phone:</b> +91 76150 80001</p>
                 <p><b>Email:</b> sagargoyal78@gmail.com</p>
-
                 <iframe
                     src="https://www.google.com/maps?q=Jaitu%20Bathinda%20Rd%20Goniana%20Punjab%20151201&output=embed"
                     width="100%" height="300" style="border:0;border-radius:18px"></iframe>
             </div>
+        </div>
+    </section>
 
+    <section id="stats">
+        <div class="box" style="text-align:center">
+            <h2>Enquiries Served</h2>
+            <h1 id="liveCounter" style="color:#0ea5a4">0</h1>
         </div>
     </section>
 
     <footer>© 2026 Ramsanahi Industries</footer>
 
-    <a class="whatsapp" href="https://wa.me/917615080001" target="_blank">💬</a>
+    <a class="whatsapp"
+        href="https://wa.me/917615080001?text=Hello%20Ramsanahi%20Industries,%20I%20am%20interested%20in%20your%20toka%20machines"
+        target="_blank">💬</a>
 
     <div class="modal" id="popupModal">
         <div class="modal-card">
-            <h3>Thank you!</h3>
-            <p>Your Queue Number</p>
-            <h1 id="queueNumber"></h1>
+            <div class="bot-header">🤖 Ramsanahi Assistant</div>
+            <div class="bot-msg">Thank you! Your Queue Number:<h1 id="queueNumber"></h1><button
+                    onclick="openChatbotWhatsApp()">Chat on WhatsApp</button></div>
             <button onclick="closeModal()">Close</button>
         </div>
     </div>
 
     <div class="modal" id="imageZoom">
         <div class="modal-card">
-            <img id="zoomImg" style="max-width:90vw;max-height:80vh">
-            <br><button onclick="closeZoom()">Close</button>
+            <img id="zoomImg" style="max-width:600px;width:100%;border-radius:18px"><br>
+            <button onclick="closeZoom()">Close</button>
         </div>
     </div>
 
     <script>
-
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
-
-        function showSlide(i) {
-            slides.forEach(s => s.classList.remove('active'));
-            slides[i].classList.add('active');
-        }
+        function showSlide(i) { slides.forEach(s => s.classList.remove('active')); slides[i].classList.add('active') }
         function nextSlide() { currentSlide = (currentSlide + 1) % slides.length; showSlide(currentSlide) }
         function prevSlide() { currentSlide = (currentSlide - 1 + slides.length) % slides.length; showSlide(currentSlide) }
 
         function zoomImage(img) { zoomImg.src = img.src; imageZoom.classList.add('show') }
         function closeZoom() { imageZoom.classList.remove('show') }
-        function closeModal() { popupModal.classList.remove('show') }
 
-        /* PINCODE AUTO */
+        const form = document.getElementById('contactForm');
+        const pincode = document.getElementById('pincode');
+        const city = document.getElementById('city');
+        const state = document.getElementById('state');
+        const country = document.getElementById('country');
+
         pincode.addEventListener('blur', async () => {
             if (pincode.value.length >= 5) {
-                const res = await fetch(`https://api.postalpincode.in/pincode/${pincode.value}`);
-                const data = await res.json();
-                if (data[0].Status === "Success") {
-                    city.value = data[0].PostOffice[0].District;
-                    state.value = data[0].PostOffice[0].State;
-                }
+                try {
+                    const res = await fetch(`https://api.postalpincode.in/pincode/${pincode.value}`);
+                    const data = await res.json();
+                    if (data[0].Status === 'Success') {
+                        city.value = data[0].PostOffice[0].District;
+                        state.value = data[0].PostOffice[0].State;
+                    }
+                } catch { }
             }
         });
 
-        /* SERIAL QUEUE */
-        function getNextQueue() {
-            let last = localStorage.getItem("lastQueue");
-            if (!last) { last = 150 }
-            let next = parseInt(last) + 1;
-            localStorage.setItem("lastQueue", next);
-            return next;
-        }
+        let chatbotMsg = '';
 
-        /* GOOGLE SHEET */
-        const scriptURL = "PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE";
+        const scriptURL = "https://script.google.com/macros/s/AKfycbwzAVtSUB2q_HNvUGRqZyMg7w5j1xSYe_WSJercFC2BmDPLrloJga_iG2CoIw_He2S2/exec";
 
-        contactForm.addEventListener('submit', async e => {
+        form.addEventListener('submit', async e => {
             e.preventDefault();
 
-            const queue = getNextQueue();
+            let lastQueue = localStorage.getItem('lastQueue') ? parseInt(localStorage.getItem('lastQueue')) : 150;
+            const queue = lastQueue + 1;
+            localStorage.setItem('lastQueue', queue);
+
             queueNumber.innerText = queue;
             popupModal.classList.add('show');
 
+            const total = JSON.parse(localStorage.getItem('totalEnquiries')) || 0;
+            localStorage.setItem('totalEnquiries', total + 1);
+            animateCounter();
+
+            chatbotMsg = `Hello Ramsanahi Industries, New enquiry from ${form.name.value}, Phone: ${form.phone.value}, Queue: ${queue}`;
+
             const data = {
-                name: name.value,
-                phone: phone.value,
+                name: form.name.value,
+                phone: form.phone.value,
                 city: city.value,
                 state: state.value,
                 country: country.value,
-                message: message.value,
+                message: form.message.value,
                 queue: queue
             };
 
-            await fetch(scriptURL, {
-                method: "POST",
-                body: JSON.stringify(data)
-            });
+            try {
+                await fetch(scriptURL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+            } catch (err) { console.log(err) }
 
-            contactForm.reset();
+            form.reset();
         });
-    </script>
 
+        function animateCounter() {
+            const el = document.getElementById('liveCounter');
+            const target = JSON.parse(localStorage.getItem('totalEnquiries')) || 0;
+            let c = 0;
+            const timer = setInterval(() => {
+                c++;
+                if (c >= target) { c = target; clearInterval(timer) }
+                el.innerText = c;
+            }, 20);
+        }
+
+        animateCounter();
+
+        function openChatbotWhatsApp() { window.open(`https://wa.me/917615080001?text=${encodeURIComponent(chatbotMsg)}`, '_blank') }
+        function closeModal() { popupModal.classList.remove('show') }
+    </script>
 </body>
 
-
 </html>
-
-
